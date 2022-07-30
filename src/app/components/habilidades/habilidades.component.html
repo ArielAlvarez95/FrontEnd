@@ -1,0 +1,21 @@
+<div class="row">
+    <h1>Habilidades</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-warning" routerLink="/nuevahab" *ngIf="isLogged">
+            Agregar Habilidad
+        </button>
+    </div>
+</div>
+<div class="row" *ngFor="let Habilidades of habilidad">   
+    <div class="progress"   style="height: 30px;" >
+        <div class="progress-bar" style="width: {{Habilidades.porcentajeH}}%" role="progressbar" > <h2>{{Habilidades.nombreH}} - {{Habilidades.porcentajeH}}%</h2></div>
+      </div>
+      <td *ngIf="isLogged">
+        <button class="btn btn-light" routerLink="/edithab/{{Habilidades.id}}">
+            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+    </td>
+    <td *ngIf="isLogged">
+        <button class="btn btn-danger" (click)="delete(Habilidades.id)">
+            <i class="bi bi-trash-fill"></i> BORRAR</button>
+    </td>  
+</div>

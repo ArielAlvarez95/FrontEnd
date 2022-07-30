@@ -1,0 +1,35 @@
+.row{
+    padding: 25px;
+    width: 100%;
+    margin: auto;
+}
+div{    
+    background-color: #33d0ef;
+    text-align: center;
+}
+#nombre{
+    margin-top: 45px;
+    font-weight: bold;
+}
+@media (min-width: 576px) {
+    img{
+        position: absolute;
+        width: 12%;
+        border-radius: 100%;
+        left: 3.6%;
+        border-style: solid;
+        top: 370px;
+    }
+}
+@media (max-width: 575px) {
+    img{
+        width: 30%;
+        border-radius: 100%;
+        left: 42%;
+        border-style: solid;
+        top: 630px;
+    }
+}
+input{
+    margin-right: 710px;
+}
