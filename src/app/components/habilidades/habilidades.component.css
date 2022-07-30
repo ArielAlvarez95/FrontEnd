@@ -3,3 +3,9 @@
     margin: auto;
     padding: 20px;
 }
+
+#progress-bar{
+    width: 50%;
+    height: 100%;
+    margin: 0%;
+}

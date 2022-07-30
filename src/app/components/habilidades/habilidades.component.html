@@ -6,10 +6,13 @@
         </button>
     </div>
 </div>
-<div class="row" *ngFor="let Habilidades of habilidad">   
-    <div class="progress"   style="height: 30px;" >
-        <div class="progress-bar" style="width: {{Habilidades.porcentajeH}}%" role="progressbar" > <h2>{{Habilidades.nombreH}} - {{Habilidades.porcentajeH}}%</h2></div>
-      </div>
+    <div class="row" *ngFor="let Habilidades of habilidad">   
+        <h2>{{Habilidades.nombreH}} - {{Habilidades.porcentajeH}}% <img src="{{Habilidades.imagenH}}" width="50px"></h2>
+        <div class="progress">
+             <div class="progress-bar" style="width: {{Habilidades.porcentajeH}}%" role="progressbar"></div>
+      </div> 
+    <div>
+    </div>
       <td *ngIf="isLogged">
         <button class="btn btn-light" routerLink="/edithab/{{Habilidades.id}}">
             <i class="bi bi-pencil-fill"></i> EDITAR</button>
