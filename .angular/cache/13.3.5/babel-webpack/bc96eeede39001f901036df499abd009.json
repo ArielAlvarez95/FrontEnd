@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Habilidades {\n  constructor(nombreH, porcentajeH, imagenH) {\n    this.nombreH = nombreH;\n    this.porcentajeH = porcentajeH;\n    this.imagenH = imagenH;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

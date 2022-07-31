@@ -7,7 +7,7 @@ import { Proyectos } from 'src/model/proyectos';
   providedIn: 'root'
 })
 export class SProyectosService {
-  proURL = 'http://localhost:8080/pro/';
+  proURL = 'https://proyectofinalargprog.herokuapp.com/';
 
   constructor(private httpClient: HttpClient) { }
 
