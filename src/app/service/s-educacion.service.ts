@@ -7,7 +7,7 @@ import { Educacion } from 'src/model/educacion';
   providedIn: 'root'
 })
 export class sEducacionService {
-  educURL = 'https://proyectofinalargprog.herokuapp.com/educ'
+  educURL = 'https://proyectofinalargprog.herokuapp.com/educ/'
   
   constructor(private httpClient: HttpClient) { }
 
