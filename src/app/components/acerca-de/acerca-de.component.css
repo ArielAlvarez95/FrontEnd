@@ -13,10 +13,9 @@ div{
 }
 @media (min-width: 576px) {
     img{
-        position: absolute;
         width: 12%;
         border-radius: 100%;
-        left: 3.6%;
+        left: 25%;
         border-style: solid;
         top: 370px;
     }
